@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Chain Chapter</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/admin.js"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  
+    <div class="admin-container">
+        <h1 class="text-2xl font-bold mb-4">Admin Panel</h1>
+  
+        <input type="text" id="taskText" placeholder="Task description" class="border p-2 rounded w-80 mb-2">
+        <input type="text" id="userId" placeholder="Assign to User UID (optional)" class="border p-2 rounded w-80 mb-2">
+
+        <select id="roleSelect" class="border p-2 rounded w-80 mb-2">
+          <option value="">-- Select Role (optional) --</option>
+          <option value="developer">Developer</option>
+          <option value="marketing">Marketing</option>
+          <option value="editor">Editor</option>
+          <option value="all">All Users</option>
+      </select>
+
+      <button id="addTaskBtn" class="bg-blue-600 text-white px-4 py-2 rounded">Add Task</button>
+    </div>
+</body>
+</html>
