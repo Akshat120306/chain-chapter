@@ -163,8 +163,16 @@ nav a.button:hover {
 section.hero {
   text-align: center;
   padding: 5rem 2rem;
-  background: linear-gradient(90deg, #5A3FAE, #B0413E);
+  background: linear-gradient(-45deg, #5A3FAE, #B0413E, #1f1c2c, #928DAB);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
   color: #fff;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 section.hero h2 {
@@ -187,11 +195,14 @@ section.hero a {
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s;
+  box-shadow: 0 0 20px rgba(90, 63, 174, 0.7),
+              0 0 40px rgba(176, 65, 62, 0.7);
 }
 
 section.hero a:hover {
-  opacity: 0.9;
+  transform: scale(1.1);
 }
+
 
 /* ===== Content Sections (about.html, dashboard, admin) ===== */
 section, .content {
