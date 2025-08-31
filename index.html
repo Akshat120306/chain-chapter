@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Chain Chapter</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body class="bg-gray-100">
   <!-- Navbar -->
@@ -16,10 +17,29 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-    <h2 class="text-4xl font-bold">Welcome to Chain Chapter</h2>
-    <p class="mt-4 text-lg">College ki sabse badiya Society</p>
-    <a href="login.html" class="mt-6 inline-block bg-white text-blue-600 px-6 py-2 rounded-full">Get Started</a>
+  <section class="hero text-center py-20">
+    <h2 id="typed" data-aos="fade-up"></h2>
+    <p class="mt-4 text-lg" data-aos="zoom-in" data-aos-delay="200">
+      College di sabto vadiya society by one and only Akshat
+    </p>
+    <a href="login.html" data-aos="fade-up" data-aos-delay="400">
+      Get Started
+    </a>
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    new Typed("#typed", {
+      strings: ["Welcome to Chain Chapter", "College di sabto vadiya society 🚀"],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>
